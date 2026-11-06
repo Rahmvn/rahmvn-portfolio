@@ -44,6 +44,8 @@ An optional `thumbnail` overrides the homepage image independently of the case-s
 
 Figma supplies shorter mobile case-study paragraphs. `ResponsiveCopy` switches those exact variants with CSS; assistive technology receives the visible copy only. The résumé uses one dataset and DOM for screen/print. `ResumeText` adds slash break opportunities without changing copied text. No generic page builder was added. Actual pages replace the obsolete development checkpoint.
 
+`content/site.ts` supplies the owner-confirmed public origin for the résumé contact and route canonical/Open Graph metadata. The homepage HTML includes initial metadata and README links to the live site. No extra self-link was added to the portfolio's Contact icons. The résumé's Portfolio link displays a concise screen label and the readable full domain in print.
+
 ## Themes, tokens and responsive layout
 
 All seven original palette values remain intact; FIGMA_REFERENCE.md records provenance. Additional semantic aliases cover media, hover, mobile tabs and diagrams. Small labels use the established muted token where lighter Figma greys fail contrast. Geist is self-hosted, including extended coverage for the naira sign.

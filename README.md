@@ -2,6 +2,8 @@
 
 Local React + TypeScript + Vite implementation of the [approved Figma portfolio](https://www.figma.com/design/GBBM8b1souv2RrwAD3x4EQ): homepage, four case studies, responsive navigation, light/soft-dark themes and an internal printable résumé.
 
+Live portfolio: [rahmvn-portfolio.vercel.app](https://rahmvn-portfolio.vercel.app/).
+
 Use Node **22.22+** (tested 22.23.1) and npm. Exact versions are locked.
 
 ```sh

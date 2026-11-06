@@ -17,6 +17,8 @@ This builds production output, starts a loopback-only preview on 4319, waits for
 
 Browser/server teardown is automatic. Generation metadata and source/output SHA-256 are recorded in ignored `.local/pdf/generation.json`. PDF bytes can change with generation timestamps. Regenerate whenever résumé data, JSX or print-relevant CSS changes. No reference file is copied into public assets.
 
+The source checksum also includes `src/content/site.ts`, which supplies the owner-confirmed portfolio URL. Generation requires the résumé's Portfolio contact link and checks that its destination is an actual PDF URI annotation before writing the download.
+
 ## Print and verify
 
 The webpage's Print button invokes the native print dialog. Select A4 portrait, 100% scale and disable browser-added headers/footers. CSS supplies 10.58mm vertical/14.29mm horizontal margins, light paper, dark text, clean section rules and unsplit entries. Site navigation/actions/footer are hidden, and links show full destinations. Printing from either screen theme uses the same light output.
@@ -25,7 +27,7 @@ The delivered PDF was independently parsed with development-only pypdf6.21.4 and
 
 - One page,594.95996×841.91998pt (approximately209.89×297.01mm; Chromium's A4 rounding).
 - Selectable/extractable text, including the naira sign, qualified commercial metrics, all four entries and corrected skills.
-- Eight URI annotations: email, phone, GitHub and the five project links in the résumé.
+- Nine URI annotations: email, phone, portfolio, GitHub and the five project links in the résumé. The portfolio prints as `rahmvn-portfolio.vercel.app` and links to `https://rahmvn-portfolio.vercel.app/`.
 - Tagged structure and 16 self-contained font resources with Unicode maps:15 Type3 glyph-program resources from Chromium's variable-font printing, plus one embedded Type0 font resource. No external font dependency in the PDF.
 - Actual PDFium rendering at794×1123px inspected against Figma155:2: no clipped text, split entry, missing glyph or second page. Minor renderer line-wrap/vertical-spacing differences remain; corrected skills intentionally differ from Figma's technical classification.
 

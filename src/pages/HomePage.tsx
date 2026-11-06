@@ -16,7 +16,7 @@ export function HomePage() {
         <div className="project-grid">{projects.map(project => <ProjectCard key={project.slug} project={project} />)}</div>
       </section>
       <div className="about-contact">
-        <section id="about" tabIndex={-1} aria-labelledby="about-heading"><h2 id="about-heading">About</h2><p>I enjoy solving practical problems through software, from understanding requirements and making technical decisions to building, testing and maintaining the finished product.</p></section>
+        <section id="about" tabIndex={-1} aria-labelledby="about-heading"><h2 id="about-heading">About</h2><p>I enjoy solving practical problems through software and understanding how the pieces fit together. My work has taken me from client websites and a commercial exam platform to Android systems that handle interruptions and uncertain information. I’m usually involved from requirements and technical decisions through implementation, testing and maintenance.</p></section>
         <section id="contact" tabIndex={-1} aria-labelledby="contact-heading"><h2 id="contact-heading">Contact</h2><ContactLinks /></section>
       </div>
     </main>

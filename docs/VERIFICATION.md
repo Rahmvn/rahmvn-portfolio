@@ -159,3 +159,17 @@ Current local review artifacts: `.local/qa/final-image-review.png`, refreshed `*
 The owner supplied a Vercel build log showing a successful Vite build into `dist`, followed by `STATIC_BUILD_NO_OUT_DIR` because Vercel expected `build`. Added root `vercel.json` with the Vite preset, `npm run build`, explicit `dist` output and the [documented SPA rewrite](https://vercel.com/docs/frameworks/frontend/vite#using-vite-to-make-spas). The output setting [overrides the dashboard value](https://vercel.com/docs/project-configuration/vercel-json#outputdirectory).
 
 `npm run check` passed lint, strict types and production build. The configured output contains index.html, application assets, theme-init.js and the generated résumé PDF. No application code or visual layout changed. This verifies the local output/configuration; a successful subsequent Vercel deployment and live direct-route/download checks remain to be confirmed. Existing noindex metadata is unchanged.
+
+## Portfolio domain, résumé and About — 2026-11-06
+
+The owner confirmed `https://rahmvn-portfolio.vercel.app/`. An anonymous request returned HTTP200 and the expected portfolio HTML/title, establishing that the earlier Vercel output-directory failure was resolved. Added the domain as a résumé contact link, readable/clickable in the generated PDF, and as the canonical/share origin and README live-site link. Route transitions update canonical and Open Graph metadata without section hashes. Initial static SPA metadata describes the homepage; existing noindex is unchanged.
+
+About now gives slightly more context using existing project facts and delivery responsibilities. Owner feedback explicitly excluded location framing, student labels, availability advertising and filler. The approved section layout, typography and colours remain intact. Desktop About/Contact remains 175px high; mobile grows naturally by 120px for the expanded copy.
+
+- `npm run check`: passed after the final About edit; lint, strict types and production build succeed.
+- Complete suite after résumé/metadata integration: **18 passed in 1.2min**, including print/download, 24 axe scans and 108 responsive overflow checks. Existing tests now also check the real Portfolio link in screen/print and canonical/share URLs across case-study/home navigation.
+- Final About edit: **4 focused responsive/navigation checks passed in 45.3s**, including all 108 width/theme overflow checks.
+- Final visual run: **24 full-page and 24 viewport captures**, no measured overflow or browser errors. Résumé contact wrapping, About/Contact and PDF appearance were visually reviewed in desktop/mobile and both themes. Native PDFium rendering shows the added domain on a single contact line without clipping.
+- Regenerated PDF: **231,535 bytes**, **one A4 page**, **nine URI annotations** including the correct portfolio destination, required selectable text/naira glyph, tagged structure and 16 self-contained Unicode-mapped font resources. Public/dist copies and the source checksum match. Generation now checks for the portfolio's actual PDF link, and its checksum includes `content/site.ts`.
+
+Local evidence is in `.local/qa/`, `.local/pdf/` and the refreshed PDF verification receipt. Original revised reference documents remain ignored and unchanged. No project screenshot or stack was altered by this update.

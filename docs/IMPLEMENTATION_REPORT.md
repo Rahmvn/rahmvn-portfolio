@@ -20,7 +20,7 @@ Added 49 runtime assets in `src/assets/`, generated PDF and notices in `public/`
 
 Lint, strict types and production build pass. The final browser suite passes 18 tests: 108 route/width/theme overflow checks, 24 axe scans, navigation/history/focus, both motion preferences, persistent/storage-restricted themes, valid assets/links, actual PDF download and Print behavior. Visual capture produced 24 full-page and 24 viewport images with no overflow or browser errors. npm audit reports 0 vulnerabilities.
 
-The generated 229,977-byte PDF has one A4 page, selectable required text/naira glyph, 8 URI links, tagged structure and self-contained font resources. Actual PDFium rendering was compared with Figma's A4 design; no clipping, split entry or missing glyph was found. Detailed evidence and limits are in [VERIFICATION.md](VERIFICATION.md) and [PDF_WORKFLOW.md](PDF_WORKFLOW.md).
+The regenerated 231,535-byte PDF has one A4 page, selectable required text/naira glyph, 9 URI links including the owner-confirmed portfolio domain, tagged structure and self-contained font resources. Actual PDFium rendering was inspected; no clipping, split entry or missing glyph was found. Detailed evidence and limits are in [VERIFICATION.md](VERIFICATION.md) and [PDF_WORKFLOW.md](PDF_WORKFLOW.md).
 
 ## Visual comparison and deliberate differences
 
@@ -49,6 +49,8 @@ Alabarin's three image slots are complete: the existing video cover on the homep
 The owner signed into PromotionSure using their existing Rahmvnx Chrome browser and selected the Practice page for case-study imagery. Genuine desktop and narrow captures populate its hero and supporting slots. The homepage now uses a separate real public landing-page capture following the owner's later preference. Scrollbars and window edges are excluded, without retouching product content. The capture workflow selected no answers or submitted results, and exposed no account settings or credentials. The browser was restored to desktop size. No project imagery remains missing; [ASSETS.md](ASSETS.md) records provenance for all 50 runtime assets and capture limits.
 
 The exact old revised PDF remains absent; the available revised DOCX was used as factual reference and kept unchanged/ignored. The downloadable artifact is the independently verified PDF generated from website print CSS.
+
+The owner-confirmed live domain is [rahmvn-portfolio.vercel.app](https://rahmvn-portfolio.vercel.app/). It is now included in the résumé webpage/generated PDF, canonical/share metadata and README. About was expanded modestly using existing project facts and delivery responsibilities; it contains no location framing, student label or availability pitch.
 
 ## Repository and review boundary
 

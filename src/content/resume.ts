@@ -1,9 +1,11 @@
 // Factual reference: owner-supplied Abdulrahman_Saheed_CV_Revised.docx.
 // Presentation: Figma 146:2 / 146:304 / 155:2. See CONTENT_DECISIONS.md.
+import { portfolioUrl } from './site'
+
 export const identity = {
   name: 'Abdulrahman Saheed', role: 'Full-Stack Software Engineer', location: 'Abuja, Nigeria',
   email: 'rahmvn1@gmail.com', phone: '+234 814 285 7377', telephone: '+2348142857377',
-  github: 'https://github.com/Rahmvn',
+  github: 'https://github.com/Rahmvn', portfolio: portfolioUrl,
 }
 
 export const profile = 'Full-stack software engineer independently delivering commercial applications and client websites. Experience spans React, PostgreSQL/Supabase, payment and authorization workflows, and native Android reliability engineering.'

@@ -1,5 +1,6 @@
 import { useEffect, useLayoutEffect, useRef } from 'react'
 import { useLocation, useNavigationType } from 'react-router'
+import { portfolioUrl } from '../content/site'
 
 export function RouteEffects() {
   const location = useLocation()
@@ -13,6 +14,11 @@ export function RouteEffects() {
     document.title = location.pathname === '/' ? 'Abdulrahman Saheed — Software Engineer' : `${location.pathname === '/resume' ? 'Résumé' : heading?.textContent ?? 'Portfolio'} | Abdulrahman Saheed`
     const description = document.querySelector<HTMLMetaElement>('meta[name="description"]')
     if (description) description.content = location.pathname === '/' ? 'Abdulrahman Saheed — full-stack software engineer building web applications, client websites and Android systems.' : `${heading?.textContent ?? 'Portfolio'} — Abdulrahman Saheed, software engineer.`
+    const canonicalUrl = new URL(location.pathname.replace(/\/+$/, '') || '/', portfolioUrl).href
+    document.querySelector<HTMLLinkElement>('link[rel="canonical"]')?.setAttribute('href', canonicalUrl)
+    for (const [property, content] of Object.entries({ 'og:title': document.title, 'og:description': description?.content ?? '', 'og:url': canonicalUrl })) {
+      document.querySelector<HTMLMetaElement>(`meta[property="${property}"]`)?.setAttribute('content', content)
+    }
     const saved = positions.current.get(location.key)
     const savedPositions = positions.current
     const target = document.getElementById(location.hash.slice(1))
