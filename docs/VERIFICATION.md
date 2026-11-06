@@ -153,3 +153,9 @@ Verification:
 - Git remains on unborn `main`: **110 untracked project files**, no staged files, commits or remotes. No commit, push or deployment occurred. Verification ports 4317/4320 are closed after the checks; the pre-existing Vite development server and owner's ordinary Chrome browser remain under their control.
 
 Current local review artifacts: `.local/qa/final-image-review.png`, refreshed `*-comparison.png`, `visual-results.json`, `final-asset-verification.json`, and `.local/alabarin-assets/final-selection.json`. Earlier selection records remain historical. No project imagery is missing. Other-browser/physical-device and hosted-publication acceptance remain outside these local checks.
+
+## Vercel output-directory correction — 2026-11-06
+
+The owner supplied a Vercel build log showing a successful Vite build into `dist`, followed by `STATIC_BUILD_NO_OUT_DIR` because Vercel expected `build`. Added root `vercel.json` with the Vite preset, `npm run build`, explicit `dist` output and the [documented SPA rewrite](https://vercel.com/docs/frameworks/frontend/vite#using-vite-to-make-spas). The output setting [overrides the dashboard value](https://vercel.com/docs/project-configuration/vercel-json#outputdirectory).
+
+`npm run check` passed lint, strict types and production build. The configured output contains index.html, application assets, theme-init.js and the generated résumé PDF. No application code or visual layout changed. This verifies the local output/configuration; a successful subsequent Vercel deployment and live direct-route/download checks remain to be confirmed. Existing noindex metadata is unchanged.

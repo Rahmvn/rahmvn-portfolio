@@ -18,6 +18,8 @@ npm run test:visual
 
 Browser/PDF scripts use installed Microsoft Edge. Browser/visual checks use built dist; build first. pdf:generate builds automatically and generates the download from website print CSS. npm run preview serves an existing build. No backend, secrets or environment variables are required. Fonts/runtime assets are local.
 
+Vercel configuration is versioned in `vercel.json`: Vite preset, `npm run build`, output directory `dist`, and an SPA fallback for direct résumé/project URLs. Use the repository root as the Vercel Root Directory. Static assets and the generated PDF are served from the build output. The previously configured `build` output directory does not match this application.
+
 - [Implementation report](docs/IMPLEMENTATION_REPORT.md)
 - [Architecture and routes](docs/ARCHITECTURE.md)
 - [Figma reference](docs/FIGMA_REFERENCE.md)

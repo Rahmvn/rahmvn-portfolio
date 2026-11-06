@@ -32,7 +32,7 @@ docs/           Provenance, decisions, workflows and verification
 
 `SiteNavigation` renders desktop labels and exported mobile tab icons. All four section links target homepage anchors from every route. `useActiveSection` combines intersection/scroll measurements with one selection. At a clamped page bottom the requested visible destination wins; wheel, touch or scroll keys release that preference. Side-by-side About/Contact use About as the passive desktop tie-breaker. Project routes never inherit Projects' selection.
 
-`RouteEffects` updates title/description, focuses the destination without extra scrolling, handles direct/repeated hashes and restores history positions. Theme changes do not navigate or reset scroll. A future static host needs an index.html SPA fallback excluding assets/downloads; no host was configured.
+`RouteEffects` updates title/description, focuses the destination without extra scrolling, handles direct/repeated hashes and restores history positions. Theme changes do not navigate or reset scroll. `vercel.json` configures Vite, `npm run build`, output directory `dist` and the documented Vercel SPA rewrite to index.html for direct routes. Vercel serves existing static assets/downloads before the SPA fallback. Hosted acceptance is separate from local build verification.
 
 ## Reusable boundaries and content
 
