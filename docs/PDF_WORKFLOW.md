@@ -27,7 +27,7 @@ The delivered PDF was independently parsed with development-only pypdf6.21.4 and
 
 - One page,594.95996×841.91998pt (approximately209.89×297.01mm; Chromium's A4 rounding).
 - Selectable/extractable text, including the naira sign, qualified commercial metrics, all four entries and corrected skills.
-- Nine URI annotations: email, phone, portfolio, GitHub and the five project links in the résumé. The portfolio prints as `rahmvn-portfolio.vercel.app` and links to `https://rahmvn-portfolio.vercel.app/`.
+- Nine URI annotations: email, phone, portfolio, GitHub and the five project links in the résumé. The portfolio prints as `abdulrahmansaheed.vercel.app` and links to `https://abdulrahmansaheed.vercel.app/`.
 - Tagged structure and 16 self-contained font resources with Unicode maps:15 Type3 glyph-program resources from Chromium's variable-font printing, plus one embedded Type0 font resource. No external font dependency in the PDF.
 - Actual PDFium rendering at794×1123px inspected against Figma155:2: no clipped text, split entry, missing glyph or second page. Minor renderer line-wrap/vertical-spacing differences remain; corrected skills intentionally differ from Figma's technical classification.
 

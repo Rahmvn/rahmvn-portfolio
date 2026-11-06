@@ -2,7 +2,7 @@
 
 Local React + TypeScript + Vite implementation of the [approved Figma portfolio](https://www.figma.com/design/GBBM8b1souv2RrwAD3x4EQ): homepage, four case studies, responsive navigation, light/soft-dark themes and an internal printable résumé.
 
-Live portfolio: [rahmvn-portfolio.vercel.app](https://rahmvn-portfolio.vercel.app/).
+Live portfolio: [abdulrahmansaheed.vercel.app](https://abdulrahmansaheed.vercel.app/).
 
 Use Node **22.22+** (tested 22.23.1) and npm. Exact versions are locked.
 
@@ -18,7 +18,7 @@ npm run test:browser
 npm run test:visual
 ```
 
-Browser/PDF scripts use installed Microsoft Edge. Browser/visual checks use built dist; build first. pdf:generate builds automatically and generates the download from website print CSS. npm run preview serves an existing build. No backend, secrets or environment variables are required. Fonts/runtime assets are local.
+Browser/PDF scripts use installed Microsoft Edge. Browser/visual checks use built dist; build first. pdf:generate builds automatically and generates the download from website print CSS. npm run preview serves an existing build. No backend, secrets or environment variables are required. Fonts and images are local; Alabarin's YouTube demonstration loads only after Play is activated.
 
 Vercel configuration is versioned in `vercel.json`: Vite preset, `npm run build`, output directory `dist`, and an SPA fallback for direct résumé/project URLs. Use the repository root as the Vercel Root Directory. Static assets and the generated PDF are served from the build output. The previously configured `build` output directory does not match this application.
 

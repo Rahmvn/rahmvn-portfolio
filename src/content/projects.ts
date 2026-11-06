@@ -4,14 +4,13 @@ import schoolAdmissions from '../assets/projects/al-muflihoon-admissions-390.web
 import pensionHome from '../assets/projects/pillars-of-pension-1440.webp'
 import pensionAuthor from '../assets/projects/pillars-of-pension-author-390.webp'
 import alabarinCover from '../assets/projects/alabarin-cover.webp'
-import alabarinAndroid from '../assets/projects/alabarin-android-start.webp'
-import alabarinViewer from '../assets/projects/alabarin-trusted-viewer.webp'
 import promotionPractice from '../assets/projects/promotionsure-practice-desktop.webp'
 import promotionPracticeNarrow from '../assets/projects/promotionsure-practice-narrow.webp'
 import promotionHome from '../assets/projects/promotionsure-home.webp'
 
 export type Technology = keyof typeof brandAssets
 export type ProjectImage = { src: string; alt: string; width: number; height: number; fit?: 'cover' | 'contain' }
+export type ProjectVideoContent = { youtubeId: string; title: string }
 const schoolOverview: ProjectImage = { src: schoolHome, alt: 'Al-Muflihoon International School public homepage on desktop.', width: 1440, height: 960 }
 const pensionOverview: ProjectImage = { src: pensionHome, alt: 'Pillars of the Pension System in Nigeria book and launch homepage on desktop.', width: 1440, height: 960 }
 const promotionOverview: ProjectImage = { src: promotionPractice, alt: 'PromotionSure Practice page with a timed question, answer options, progress and question navigation.', width: 1895, height: 947, fit: 'contain' }
@@ -19,9 +18,10 @@ export type Project = {
   slug: string; title: string; description: string; subtitle: string; introduction: string
   website?: string; repository: string; technologies: readonly Technology[]
   work: string; scope: string; areas: string; statusLabel: string; status: string
-  captions: readonly [string, string]; outcomeTitle: string; outcome: string
+  captions?: readonly [string, string]; outcomeTitle: string; outcome: string
   mobile?: { introduction?: string; work?: string; outcome?: string }
-  media?: { thumbnail?: ProjectImage; cover: ProjectImage; supporting: readonly [ProjectImage, ProjectImage] }
+  media?: { thumbnail?: ProjectImage; cover: ProjectImage; supporting?: readonly [ProjectImage, ProjectImage] }
+  video?: ProjectVideoContent
 }
 
 // Public-safe editorial content. Evidence and meaningful corrections live in CONTENT_DECISIONS.md.
@@ -45,15 +45,12 @@ export const projects: readonly Project[] = [
     repository: 'https://github.com/Rahmvn/journey-continuity',
     media: {
       cover: { src: alabarinCover, alt: 'Alabarin video cover with the recorded Android limited-connectivity interface.', width: 1920, height: 1080, fit: 'contain' },
-      supporting: [
-        { src: alabarinAndroid, alt: 'Original Android Traveller Start Journey screenshot with destination and expected-arrival controls.', width: 672, height: 480, fit: 'contain' },
-        { src: alabarinViewer, alt: 'Original authenticated Trusted Viewer screenshot showing historical Journey status and update time.', width: 1214, height: 554, fit: 'contain' },
-      ],
     },
+    video: { youtubeId: 'dqTgYIgv4a8', title: 'Alabarin product demonstration' },
     technologies: ['Kotlin', 'Compose', 'Room', 'React', 'TypeScript', 'Supabase', 'AWS', 'MCP'],
     work: 'Alabarin addresses the information gap that can arise when someone becomes unreachable while travelling. The Android Traveller records Journey observations; the authenticated Trusted Viewer and MCP service let authorized people review available historical evidence without claiming to know whether the traveller is safe.',
     scope: 'Android · web · backend engineering', areas: 'Journeys · Access control · Viewer · MCP', statusLabel: 'Status', status: 'Hackathon submission · development paused',
-    captions: ['Android Traveller: destination and arrival setup', 'Trusted Viewer: historical Journey status'], outcomeTitle: 'Verified across components',
+    outcomeTitle: 'Verified across components',
     outcome: 'Live acceptance connected an Android-created Journey to the React Viewer and MCP service. Both returned matching values for 13 shared status fields; revoking the MCP session was also tested. This is a development milestone, not a claim of production-grade safety or native Alexa integration.',
     mobile: {
       introduction: 'Preserving Journey evidence for authorized trusted people when communication becomes uncertain.',

@@ -4,6 +4,7 @@ import { ProjectMedia } from '../components/ProjectMedia'
 import { TechnologyList } from '../components/TechnologyList'
 import { SystemOverview } from '../components/SystemOverview'
 import { ResponsiveCopy } from '../components/ResponsiveCopy'
+import { ProjectVideo } from '../components/ProjectVideo'
 
 export function ProjectPage({ project, next }: { project: Project; next: Project }) {
   return <main id="main-content" className="case-study page-entrance" tabIndex={-1}>
@@ -21,7 +22,7 @@ export function ProjectPage({ project, next }: { project: Project; next: Project
       <section className="project-work" aria-labelledby="work-heading"><h2 id="work-heading">The work</h2><p><ResponsiveCopy text={project.work} mobile={project.mobile?.work} /></p></section>
       <dl className="project-scope"><div><dt>Scope</dt><dd>{project.scope}</dd></div><div><dt>Key areas</dt><dd>{project.areas}</dd></div><div><dt>{project.statusLabel}</dt><dd>{project.status}</dd></div></dl>
     </div>
-    <div className="project-supporting">{project.captions.map((caption, index) => <figure key={caption}><ProjectMedia image={project.media?.supporting[index]} /><figcaption>{caption}</figcaption></figure>)}</div>
+    {project.video ? <ProjectVideo video={project.video} poster={project.media?.cover} /> : <div className="project-supporting">{project.captions?.map((caption, index) => <figure key={caption}><ProjectMedia image={project.media?.supporting?.[index]} /><figcaption>{caption}</figcaption></figure>)}</div>}
     <div className="project-ending">
       <section className="project-outcome" aria-labelledby="outcome-heading"><h2 id="outcome-heading">{project.outcomeTitle}</h2><p><ResponsiveCopy text={project.outcome} mobile={project.mobile?.outcome} /></p></section>
       <nav className="project-pagination" aria-label="Project navigation"><Link to="/#projects">← All projects</Link><Link to={`/projects/${next.slug}`}>Next: {next.title} →</Link></nav>

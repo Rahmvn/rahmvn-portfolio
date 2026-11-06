@@ -688,7 +688,7 @@
     },
     "source": {
       "url": "https://pillars-of-pension-website.vercel.app/author.html",
-      "title": "The Author \u2014 Saheed Adekunle Imran",
+      "title": "The Author — Saheed Adekunle Imran",
       "capturedAt": "2026-11-05T19:20:46.378Z",
       "width": 390,
       "status": 200,
@@ -792,7 +792,9 @@
       "description": "Original authenticated browser screenshot; Journey status and historical update time, with no precise coordinates.",
       "processing": "Direct original PNG crop encoded as lossless WebP; decoded RGB pixels exactly equal the source crop. No upscaling, sharpening, text edits, video frames or poster composition.",
       "evidenceClass": "Historical application/device/browser screenshot, not fresh hosted acceptance."
-    }
+    },
+    "runtime": false,
+    "usage": "Retained reviewed source image; replaced by the owner-selected YouTube video in the case study. Not imported or included in the production build."
   },
   {
     "file": "src/assets/projects/alabarin-android-start.webp",
@@ -820,7 +822,9 @@
       "description": "Direct Android Traveller Start Journey screen; native destination and expected-arrival controls.",
       "processing": "Direct original PNG crop encoded as lossless WebP; decoded RGB pixels exactly equal the source crop. No upscaling, sharpening, text edits, video frames or poster composition.",
       "evidenceClass": "Historical application/device/browser screenshot, not fresh hosted acceptance."
-    }
+    },
+    "runtime": false,
+    "usage": "Retained reviewed source image; replaced by the owner-selected YouTube video in the case study. Not imported or included in the production build."
   },
   {
     "file": "src/assets/projects/alabarin-cover.webp",
@@ -831,12 +835,12 @@
       "height": 1080
     },
     "source": {
-      "kind": "Existing video cover, homepage-only owner exception",
+      "kind": "Existing video cover, owner-approved homepage and player poster",
       "archiveAsset": "Alabarin-YouTube-Thumbnail.png",
       "originalSha256": "a65f9429b971cf590d6bd6887c5d732170533289ad94e4e8eddedf65f2ac00ad",
       "inspectedAt": "2026-11-06",
       "processing": "Lossless WebP conversion of the existing cover; no new composition or content edits.",
-      "evidenceClass": "Editorial video thumbnail used only on the homepage at the owner request."
+      "evidenceClass": "Editorial video thumbnail reused for the homepage and click-to-load player at the owner request."
     }
   },
   {

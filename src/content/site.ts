@@ -1,1 +1,1 @@
-export const portfolioUrl = 'https://rahmvn-portfolio.vercel.app/'
+export const portfolioUrl = 'https://abdulrahmansaheed.vercel.app/'

@@ -8,7 +8,7 @@ Implemented in `C:\dev\my-current-portfolio` from the approved Figma file, prese
 - Four full case studies: PromotionSure, Alabarin, Al-Muflihoon and Pillars of Pension, with shared media/technology/scope/outcome/pagination structure. Alabarin includes distinct desktop/mobile system diagrams.
 - Original desktop/mobile navigation, contact artwork and sun/moon toggle; persistent light/soft-dark mode, route/section focus, hover/active states, keyboard access and reduced motion. Individual case studies select no homepage section.
 - Internal résumé, native Print action, A4 styling and a newly generated downloadable PDF. Available revised DOCX facts are shared between screen/print; no rejected redesign or old source document is published.
-- Genuine school/Pillars public screenshots, native Alabarin Android/Viewer screenshots, an owner-approved existing Alabarin video cover, PromotionSure's public landing cover and owner-authorized Practice captures. All intended project image slots are populated. Technology marks remain monochrome. Owner-supplied X link is https://x.com/RahmvnDev.
+- Genuine school/Pillars public screenshots, an owner-selected Alabarin YouTube demonstration and existing cover, PromotionSure's public landing cover and owner-authorized Practice captures. All intended project media is populated. Technology marks remain monochrome. Owner-supplied X link is https://x.com/RahmvnDev.
 
 ## Architecture and file inventory
 
@@ -18,9 +18,9 @@ Added 49 runtime assets in `src/assets/`, generated PDF and notices in `public/`
 
 ## Verification
 
-Lint, strict types and production build pass. The final browser suite passes 18 tests: 108 route/width/theme overflow checks, 24 axe scans, navigation/history/focus, both motion preferences, persistent/storage-restricted themes, valid assets/links, actual PDF download and Print behavior. Visual capture produced 24 full-page and 24 viewport images with no overflow or browser errors. npm audit reports 0 vulnerabilities.
+Lint, strict types and production build pass. The browser suite includes 19 tests: 108 route/width/theme overflow checks, 24 axe scans, navigation/history/focus, both motion preferences, persistent/storage-restricted themes, valid assets/links, actual PDF download/Print behavior and click-to-load video interaction. Visual capture covers 24 full-page and 24 viewport images. Detailed final results are recorded in VERIFICATION.md; npm audit reported 0 vulnerabilities at the original check time.
 
-The regenerated 231,535-byte PDF has one A4 page, selectable required text/naira glyph, 9 URI links including the owner-confirmed portfolio domain, tagged structure and self-contained font resources. Actual PDFium rendering was inspected; no clipping, split entry or missing glyph was found. Detailed evidence and limits are in [VERIFICATION.md](VERIFICATION.md) and [PDF_WORKFLOW.md](PDF_WORKFLOW.md).
+The regenerated 232,301-byte PDF has one A4 page, selectable required text/naira glyph, 9 URI links including the replacement portfolio domain, tagged structure and self-contained font resources. Actual PDFium rendering was inspected; no clipping, split entry or missing glyph was found. Detailed evidence and limits are in [VERIFICATION.md](VERIFICATION.md) and [PDF_WORKFLOW.md](PDF_WORKFLOW.md).
 
 ## Visual comparison and deliberate differences
 
@@ -44,13 +44,13 @@ QA images are intentionally ignored; the review links refer to this workspace.
 
 [CONTENT_DECISIONS.md](CONTENT_DECISIONS.md) records original/corrected wording and evidence: HTML/CSS classification, precise MCP-session revocation, supported Pillars design-to-code attribution, date-neutral launch wording, original revised facts/new PDF workflow, X destination, brand marks and real captures. Qualified historical metrics remain qualified. No achievement or technology was invented.
 
-Alabarin's three image slots are complete: the existing video cover on the homepage only, a sharp native Android Traveller Start Journey crop and an original authenticated Trusted Viewer screenshot. Its diagram remains the case hero. The supporting images replace the earlier video frames at the owner's request. Lossless conversion preserves the exact source-crop pixels; original files remain unchanged. Captions describe the actual controls/status rather than claiming recovery or MCP interaction from a still.
+Alabarin now uses the owner-selected [YouTube demonstration](https://www.youtube.com/watch?v=dqTgYIgv4a8) instead of both case-study screenshots. Its diagram remains the case hero, and its existing homepage cover is also the local video poster. The player loads only after activation and retains a direct watch link. Original screenshots remain reviewed sources outside the runtime bundle; no archive was changed. The video does not strengthen the qualified project claims.
 
-The owner signed into PromotionSure using their existing Rahmvnx Chrome browser and selected the Practice page for case-study imagery. Genuine desktop and narrow captures populate its hero and supporting slots. The homepage now uses a separate real public landing-page capture following the owner's later preference. Scrollbars and window edges are excluded, without retouching product content. The capture workflow selected no answers or submitted results, and exposed no account settings or credentials. The browser was restored to desktop size. No project imagery remains missing; [ASSETS.md](ASSETS.md) records provenance for all 50 runtime assets and capture limits.
+The owner signed into PromotionSure using their existing Rahmvnx Chrome browser and selected the Practice page for case-study imagery. Genuine desktop and narrow captures populate its hero and supporting slots. The homepage now uses a separate real public landing-page capture following the owner's later preference. Scrollbars and window edges are excluded, without retouching product content. The capture workflow selected no answers or submitted results, and exposed no account settings or credentials. The browser was restored to desktop size. No project imagery remains missing; [ASSETS.md](ASSETS.md) records provenance for 48 runtime assets, two retained source screenshots, the external video and capture limits.
 
 The exact old revised PDF remains absent; the available revised DOCX was used as factual reference and kept unchanged/ignored. The downloadable artifact is the independently verified PDF generated from website print CSS.
 
-The owner-confirmed live domain is [rahmvn-portfolio.vercel.app](https://rahmvn-portfolio.vercel.app/). It is now included in the résumé webpage/generated PDF, canonical/share metadata and README. About was expanded modestly using existing project facts and delivery responsibilities; it contains no location framing, student label or availability pitch.
+The owner-confirmed live domain is [abdulrahmansaheed.vercel.app](https://abdulrahmansaheed.vercel.app/). It is now included in the résumé webpage/generated PDF, canonical/share metadata and README. About was expanded modestly using existing project facts and delivery responsibilities; it contains no location framing, student label or availability pitch.
 
 ## Repository and review boundary
 

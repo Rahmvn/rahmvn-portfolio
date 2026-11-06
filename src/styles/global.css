@@ -105,6 +105,16 @@ a.contact-link:hover .contact-icon { background: var(--color-surface); }
 .project-scope > div:first-child dd { font-size: 16px; font-weight: 500; color: var(--color-ink); line-height: 1.4; }
 .project-supporting { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
 .project-supporting figcaption { margin-block-start: 12px; font-size: 14px; line-height: 1.35; color: var(--color-muted); }
+.project-video { min-inline-size: 0; }
+.project-video-frame { position: relative; inline-size: 100%; aspect-ratio: 16 / 9; min-block-size: 200px; overflow: hidden; border-radius: 12px; background: var(--color-media); }
+.project-video-frame iframe, .project-video-poster { position: absolute; inset: 0; inline-size: 100%; block-size: 100%; border: 0; display: block; }
+.project-video-poster { padding: 0; background: var(--color-media); cursor: pointer; }
+.project-video-poster img { inline-size: 100%; block-size: 100%; object-fit: contain; }
+.project-video-play { position: absolute; inset: 50% auto auto 50%; transform: translate(-50%, -50%); white-space: nowrap; }
+.project-video-poster:hover .project-video-play { background: var(--color-primary-hover); }
+.project-video-poster:focus-visible { outline-offset: -4px; }
+.project-video figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; margin-block-start: 12px; font-size: 14px; line-height: 1.4; color: var(--color-muted); }
+.project-video figcaption a { text-decoration: underline; text-underline-offset: 3px; }
 .project-ending { display: flex; flex-direction: column; gap: 29px; border-block-start: 1px solid var(--color-border); padding-block-start: 29px; }
 .project-outcome { max-inline-size: 760px; display: flex; flex-direction: column; gap: 11px; }
 .project-outcome h2 { font-size: 27px; line-height: 1.2; }

@@ -1,6 +1,6 @@
 # Asset provenance
 
-All runtime assets are local. `ASSET_MANIFEST.json` records source identity, intrinsic dimensions, byte size and SHA-256 for **50 assets**: 35 Figma exports, 5 Simple Icons marks and 10 project images. Original SVG geometry was retained; unused downloaded duplicates were removed. No temporary Figma URL is a runtime source.
+`ASSET_MANIFEST.json` records source identity, intrinsic dimensions, byte size and SHA-256 for **50 local assets**: 35 Figma exports, 5 Simple Icons marks and 10 project images. Of these, 48 are used by the application; the two native Alabarin screenshots are retained reviewed sources, marked `runtime: false`, and excluded from the production bundle. The owner-selected Alabarin video is externally hosted and loads only after activation. Original SVG geometry was retained; no temporary Figma URL is a runtime source.
 
 ## Shared vectors
 
@@ -26,6 +26,8 @@ Captured with installed headless Edge, unauthenticated and without form submissi
 No image filter changes product colours between portfolio themes. Covers use top-aligned cropping; portrait supporting captures preserve the full viewport within the neutral frame. No device mockup or unrelated stock imagery was added. These images intentionally fill Figma's empty development-time screenshot slots; the container geometry stays intact.
 
 ## Alabarin local archive selection — refined 2026-11-06
+
+**Current placement:** the owner subsequently replaced both native case-study screenshots with the YouTube demonstration below. The screenshot provenance is retained here as history; the original local files remain unchanged and the two WebP source assets are not imported into the application. The existing cover still supplies the homepage thumbnail and click-to-load video poster.
 
 Following the owner's direction, the local Alabarin recovery, film-production and Android artifact folders were inspected read-only. A scoped file inventory found 10,388 image files, including repeated extracted frames, browser fixtures and older UI states. After the owner requested sharper direct screenshots and the Android Traveller UI, the case-study video frames were replaced with original native screenshots. The existing video cover remains on the homepage at the owner's explicit later request. The source archives were left unchanged.
 
@@ -58,7 +60,13 @@ These images establish the public landing page and real Practice interface at ca
 ## Capture completion
 
 - **PromotionSure:** the homepage uses the public landing page; case-study slots retain the owner-requested Practice captures. Earlier Edge timeouts were resolved for the public capture by disabling HTTP/2 and QUIC in that capture context. The separate temporary capture browser was closed; no credentials were requested through chat or copied to runtime assets.
-- **Alabarin:** the homepage retains the existing video cover; both case-study screenshot slots use sharp direct native images. No fresh device, cloud or authenticated Viewer operation was needed.
+- **Alabarin:** the homepage retains the existing cover; the case study uses the owner-selected YouTube demonstration instead of both screenshots. The cover is also the local player poster. No fresh device, cloud or authenticated Viewer operation was needed.
 - **School and Pillars:** existing genuine public screenshots remain in place. No project image slots currently require placeholder imagery.
 
 `node scripts/capture-projects.mjs` reproduces public capture attempts into ignored QA storage. `--details` limits it to admissions/author pages. Review before promoting an output to runtime assets, update the manifest and rerun browser/visual checks. An unsuccessful capture never becomes runtime imagery.
+
+## Alabarin demonstration video — 2026-11-06
+
+The owner supplied [YouTube video dqTgYIgv4a8](https://www.youtube.com/watch?v=dqTgYIgv4a8) and explicitly requested it instead of the two case-study pictures. YouTube oEmbed returned HTTP200 with the title “Alabarin | Journey Continuity When Communication Fails”; the privacy-enhanced embed endpoint also returned HTTP200. The existing local cover is reused as the poster, with no external thumbnail request or additional imagery. The source URL's share-tracking parameter is omitted from the canonical watch link.
+
+The embedded video is the sole supporting demonstration; the semantic system diagram remains the case-study hero. Player controls, fullscreen/inline playback and caption preference are enabled. Playback is requested only after a deliberate Play activation. A permanent “Watch on YouTube” link provides an alternative if embedding is unavailable. Video content remains historical demonstration evidence; adding it does not strengthen the qualified engineering/reliability claims.
