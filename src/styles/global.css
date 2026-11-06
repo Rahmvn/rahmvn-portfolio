@@ -1,0 +1,305 @@
+* { box-sizing: border-box; }
+html { font-family: var(--font-sans); background: var(--color-background); color: var(--color-ink); font-synthesis: none; -webkit-font-smoothing: antialiased; transition: background-color var(--motion-theme) var(--ease-theme), color var(--motion-theme) var(--ease-theme); }
+body { margin: 0; min-inline-size: 20rem; }
+button, input, textarea, select { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { cursor: pointer; }
+a { color: inherit; text-decoration: none; }
+button { color: inherit; }
+h1, h2, h3, p, figure, dl, dd { margin: 0; }
+ul { margin: 0; }
+h1, h2, h3 { font-weight: 500; }
+img { display: block; }
+main, section, article, div { min-inline-size: 0; }
+main:focus { outline: none; }
+section[id] { scroll-margin-top: 24px; }
+:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 5px; border-radius: 3px; }
+.skip-link { position: fixed; top: 8px; left: 8px; z-index: 20; padding: 12px 16px; background: var(--color-raised); transform: translateY(-200%); }
+.skip-link:focus { transform: none; }
+.site-shell { max-inline-size: 1060px; inline-size: calc(100% - 140px); margin-inline: auto; padding-block-start: 48px; }
+.site-header { display: flex; align-items: center; justify-content: space-between; block-size: 52px; }
+.wordmark { font-size: 24px; line-height: 1.36; font-weight: 600; }
+.header-actions { display: flex; align-items: center; gap: 24px; }
+.desktop-navigation { display: flex; align-items: center; gap: 11px; }
+.navigation-link { font-size: 15px; font-weight: 500; line-height: 1.35; padding: 10px 14px; color: var(--color-muted); transition: color var(--motion-action) ease-out; }
+.navigation-link:hover, .navigation-link[aria-current] { color: var(--color-ink); }
+.navigation-link[aria-current] { font-weight: 600; }
+.mobile-resume, .mobile-navigation { display: none; }
+.theme-toggle { display: grid; place-items: center; inline-size: 70px; block-size: 44px; padding: 0; border: 0; background: transparent; border-radius: 24px; flex: 0 0 70px; }
+.theme-toggle:hover { opacity: 0.88; }
+.design-icon { display: inline-block; flex: 0 0 auto; vertical-align: middle; line-height: 0; }
+.icon-dark { display: none; }
+:root[data-theme='dark'] .icon-light { display: none; }
+:root[data-theme='dark'] .icon-dark { display: block; }
+.site-footer { font-size: 12px; line-height: 16px; color: var(--color-muted); margin-block-start: 61px; padding-block-end: 48px; }
+.page-entrance { animation: page-entrance var(--motion-entrance) var(--ease-entrance) both; }
+@keyframes page-entrance { from { opacity: 0; } to { opacity: 1; } }
+
+/* Homepage: 1200px desktop and 390px mobile reference compositions. */
+.home-page { display: flex; flex-direction: column; gap: 61px; margin-block-start: 61px; }
+.hero { display: flex; flex-direction: column; gap: 16px; }
+.hero h1 { font-size: 59px; line-height: 1.36; }
+.hero-role { font-size: 25px; line-height: 1.36; }
+.hero-description { max-inline-size: 850px; font-size: 19px; line-height: 1.36; color: var(--color-muted); }
+.featured-projects h2 { font-size: 30px; line-height: 1.36; margin-block-end: 30px; }
+.project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 32px; max-inline-size: 1008px; }
+.project-card { display: flex; flex-direction: column; }
+.project-card-image { block-size: 264px; border-radius: 9px; background: var(--color-surface); overflow: hidden; transition: background-color var(--motion-hover) ease-out; }
+.project-card:hover .project-card-image, .project-card:focus-visible .project-card-image { background: var(--color-card-hover); }
+.project-card-image img { inline-size: 100%; block-size: 100%; object-fit: cover; object-position: top; }
+.project-card-information { padding-block-start: 17px; display: flex; flex-direction: column; gap: 10px; }
+.project-card h3 { font-size: 22px; line-height: 1.35; }
+.project-card p { font-size: 15px; line-height: 1.35; color: var(--color-muted); }
+.about-contact { display: grid; grid-template-columns: minmax(0, 605px) minmax(0, 340px); gap: 94px; min-block-size: 175px; }
+.about-contact h2 { font-size: 28px; line-height: 1.36; margin-block-end: 15px; }
+#about p { font-size: 17px; line-height: 1.36; color: var(--color-muted); }
+#contact h2 { padding-inline-start: 10px; margin-block-end: 14px; line-height: 1.32; }
+.contact-links { display: flex; gap: 11px; }
+.contact-link { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding-block: 4px; inline-size: 68px; max-inline-size: 68px; flex: 1 1 68px; font-size: 12px; line-height: 1.2; color: var(--color-muted); }
+.contact-icon { display: grid; place-items: center; inline-size: 48px; block-size: 48px; border: 1px solid var(--color-border); border-radius: 15px; background: var(--color-raised); transition: background-color var(--motion-action) ease-out; }
+a.contact-link:hover .contact-icon { background: var(--color-surface); }
+.contact-pending { cursor: default; }
+
+/* Shared case-study hierarchy, kept separate from homepage section navigation. */
+.case-study { display: flex; flex-direction: column; gap: 50px; margin-block-start: 50px; padding-block-end: 68px; }
+.project-introduction { display: flex; flex-direction: column; gap: 17px; }
+.back-link { font-size: 14px; font-weight: 500; line-height: 1.2; color: var(--color-muted); inline-size: fit-content; }
+.back-link:hover { color: var(--color-ink); text-decoration: underline; text-underline-offset: 4px; }
+.project-heading { padding-block-start: 25px; display: flex; flex-direction: column; gap: 11px; }
+.project-heading h1 { font-size: 62px; line-height: 1.08; overflow-wrap: anywhere; }
+.project-subtitle { font-size: 22px; line-height: 1.35; }
+.project-summary { font-size: 17px; line-height: 1.5; max-inline-size: 830px; color: var(--color-muted); }
+.project-actions { display: flex; flex-wrap: wrap; gap: 12px; padding-block-start: 7px; }
+.action-link { display: inline-flex; align-items: center; justify-content: center; gap: 12px; padding: 13px 19px; min-block-size: 44px; font-size: 14px; line-height: 18px; font-weight: 500; border: 1px solid transparent; border-radius: 10px; transition: color var(--motion-hover) ease-out, background-color var(--motion-hover) ease-out, border-color var(--motion-hover) ease-out; }
+.action-link > span[aria-hidden] { transition: transform var(--motion-hover) ease-out; }
+.action-link:hover > span[aria-hidden] { transform: translate(2px, -2px); }
+.action-primary { background: var(--color-ink); color: var(--color-background); }
+.action-primary:hover { background: var(--color-primary-hover); }
+.action-secondary { background: transparent; border-color: var(--color-border); color: var(--color-ink); }
+.action-secondary:hover { background: var(--color-surface); }
+:root[data-theme='dark'] .action-secondary { background: var(--color-raised); }
+.project-media { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 11px; block-size: 304px; inline-size: 100%; background: var(--color-media); border-radius: 12px; color: var(--color-muted); font-size: 14px; line-height: normal; }
+.project-media-hero { block-size: 470px; }
+.project-media { overflow: hidden; }
+.project-capture { inline-size: 100%; block-size: 100%; object-fit: cover; object-position: top; }
+.project-capture-portrait { object-fit: contain; }
+:root[data-theme='dark'] .project-media .design-icon { filter: brightness(0) invert(0.85); }
+.technologies { display: flex; align-items: center; gap: 36px; }
+.technologies h2 { font-size: 11px; font-weight: 500; line-height: 1.35; text-transform: uppercase; inline-size: 115px; flex: 0 0 115px; color: var(--color-muted); }
+.technologies ul { display: flex; flex-wrap: wrap; align-items: center; gap: 15px; list-style: none; padding: 0; }
+.technologies:has(li:nth-child(8)) ul { gap: 9px; }
+.technologies li { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 7px; inline-size: 94px; block-size: 88px; font-size: 12px; line-height: normal; color: var(--color-muted); }
+.technology-mark { display: grid; place-items: center; inline-size: 44px; block-size: 44px; border-radius: 11px; background: var(--color-media); }
+.technology-mark-bordered { border: 0.8px solid var(--color-border); background: var(--color-raised); }
+.official-brand { inline-size: 26px; block-size: 26px; }
+:root[data-theme='dark'] .brand-icon { filter: invert(0.93); }
+.project-narrative { display: grid; grid-template-columns: minmax(0, 600px) minmax(0, 340px); gap: 94px; }
+.project-work { display: flex; flex-direction: column; gap: 19px; }
+.project-work h2 { font-size: 27px; line-height: 1.25; }
+.project-work p { font-size: 17px; line-height: 1.59; color: var(--color-muted); }
+.project-scope { padding: 8px 0 0 26px; }
+.project-scope > div { display: flex; flex-direction: column; gap: 18px; }
+.project-scope > div + div { border-block-start: 1px solid var(--color-border); padding-block-start: 18px; margin-block-start: 18px; }
+.project-scope dt { color: var(--color-muted); text-transform: uppercase; font-size: 11px; font-weight: 500; line-height: 1.2; }
+.project-scope dd { font-size: 15px; line-height: 1.5; color: var(--color-muted); }
+.project-scope > div:first-child dd { font-size: 16px; font-weight: 500; color: var(--color-ink); line-height: 1.4; }
+.project-supporting { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.project-supporting figcaption { margin-block-start: 12px; font-size: 14px; line-height: 1.35; color: var(--color-muted); }
+.project-ending { display: flex; flex-direction: column; gap: 29px; border-block-start: 1px solid var(--color-border); padding-block-start: 29px; }
+.project-outcome { max-inline-size: 760px; display: flex; flex-direction: column; gap: 11px; }
+.project-outcome h2 { font-size: 27px; line-height: 1.2; }
+.project-outcome p { font-size: 16px; line-height: 1.55; color: var(--color-muted); }
+.project-pagination { display: flex; justify-content: space-between; gap: 24px; border-block-start: 1px solid var(--color-border); padding-block-start: 29px; font-size: 15px; line-height: 1.25; font-weight: 500; }
+.project-pagination a:last-child { text-align: right; }
+.project-pagination a:hover { color: var(--color-accent); }
+
+/* Original system diagram: distinct desktop and mobile compositions, real exported connectors. */
+.system-overview { position: relative; background: var(--color-diagram); border-radius: 12px; overflow: hidden; aspect-ratio: 1060 / 470; }
+.diagram-canvas { position: absolute; inset: 0 auto auto 0; inline-size: 1060px; block-size: 470px; transform-origin: top left; }
+.diagram-eyebrow { position: absolute; left: 36px; top: 28px; font-size: 12px; font-weight: 500; line-height: 1.3; text-transform: uppercase; color: var(--color-muted); }
+.diagram-title { position: absolute; left: 36px; top: 52px; font-size: 22px; line-height: 1.25; }
+.diagram-routes { position: absolute; inset: 0; pointer-events: none; }
+.diagram-routes-mobile { display: none; }
+.diagram-nodes { list-style: none; padding: 0; }
+.diagram-node { position: absolute; border: 1px solid var(--color-diagram-border); border-radius: 12px; background: var(--color-diagram-node); padding: 12px 17px; }
+.diagram-node > span { color: var(--color-muted); text-transform: uppercase; font-size: 10px; font-weight: 500; line-height: 1.3; display: block; }
+.diagram-node h3 { font-size: 19px; line-height: 1.25; margin-block-start: 9px; }
+.diagram-node p { font-size: 14px; line-height: 1.4; color: var(--color-muted); margin-block-start: 8px; }
+.diagram-android { left: 36px; top: 161px; inline-size: 242px; block-size: 142px; }
+.diagram-supabase { left: 338px; top: 161px; inline-size: 270px; block-size: 142px; }
+.diagram-viewer, .diagram-mcp { left: 711px; inline-size: 313px; block-size: 118px; }
+.diagram-viewer { top: 136px; }
+.diagram-mcp { top: 275px; }
+.diagram-viewer h3, .diagram-mcp h3 { font-size: 16px; }
+.diagram-viewer p, .diagram-mcp p { font-size: 12px; }
+.diagram-note { position: absolute; left: 36px; top: 422px; inline-size: 900px; font-size: 14px; line-height: 1.4; color: var(--color-muted); }
+
+/* Responsive web résumé; factual content is shared with physical A4 printing. */
+.resume-page { margin-block-start: 85px; }
+.resume-hero { display: flex; align-items: flex-start; gap: 34px; }
+.resume-identity { display: flex; flex-direction: column; gap: 13px; inline-size: 635px; }
+.resume-identity h1 { font-size: 55px; line-height: 65px; font-weight: 600; }
+.resume-role { font-size: 15px; line-height: 23px; color: var(--color-muted); }
+.resume-contact { font-size: 13px; line-height: 21px; color: var(--color-muted); }
+.resume-contact a { white-space: nowrap; }
+.resume-contact a:hover, .resume-entry-links a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.resume-actions { display: flex; gap: 10px; }
+.resume-actions .action-link { font-size: 13px; line-height: 18px; border-radius: 11px; block-size: 44px; padding-inline: 17px; }
+.resume-actions button { inline-size: 150px; background: var(--color-raised); }
+.resume-actions a { inline-size: 201px; }
+.resume-top-rule { border-block-start: 1px solid var(--color-border); margin-block: 49px 53px; }
+.resume-section { display: grid; grid-template-columns: 205px minmax(0, 1fr); gap: 64px; }
+.resume-section > h2 { font-size: 16px; font-weight: 500; line-height: 23px; padding-block-end: 14px; border-block-end: 1px solid var(--color-border); align-self: start; }
+.resume-section-content { font-size: 15px; line-height: 23px; }
+.resume-profile .resume-section-content { font-size: 16px; line-height: 26px; }
+.resume-experience { margin-block-start: 66px; }
+.resume-entry-heading { display: grid; grid-template-columns: minmax(0, 1fr) 213px; align-items: start; }
+.resume-entry h3, .resume-education h3 { font-size: 19px; line-height: 26.5px; font-weight: 600; }
+.resume-dates { font-size: 13px; line-height: 20px; color: var(--color-muted); text-align: right; }
+.resume-entry-role { color: var(--color-muted); font-size: 13px; font-weight: 500; line-height: 19px; margin-block-start: 7px; }
+.resume-entry-links { display: flex; flex-wrap: wrap; gap: 14px; margin-block-start: 7px; font-size: 12px; line-height: 18px; color: var(--color-accent); }
+.resume-bullets { list-style: none; padding: 0; margin-block-start: 14px; display: flex; flex-direction: column; gap: 9px; }
+.resume-bullets li { padding-inline-start: 20px; position: relative; line-height: 24px; }
+.resume-bullets li::before { content: '•'; color: var(--color-accent); position: absolute; left: 0; inline-size: 12px; }
+.resume-entry + .resume-entry { margin-block-start: 27px; padding-block-start: 28px; border-block-start: 1px solid var(--color-border); }
+.resume-education { margin-block-start: 68px; }
+.resume-education .resume-section-content { display: flex; flex-direction: column; gap: 9px; }
+.education-heading { display: contents; }
+.resume-education .resume-graduation { order: 1; }
+.mobile-copy { display: none; }
+.resume-graduation { font-size: 12.5px; line-height: 19px; color: var(--color-muted); font-weight: 500; }
+.resume-skills { margin-block-start: 68px; }
+.resume-skills dl { display: flex; flex-direction: column; gap: 17px; }
+.resume-skills dl > div { display: grid; grid-template-columns: 155px minmax(0, 1fr); gap: 18px; }
+.resume-skills dt { font-size: 14px; line-height: 20px; font-weight: 500; }
+.resume-skills dd { color: var(--color-muted); font-size: 14.5px; line-height: 23px; }
+.resume-return { display: block; margin-block-start: 74px; padding-block-start: 28px; border-block-start: 1px solid var(--color-border); inline-size: 100%; color: var(--color-accent); }
+.resume-page + .site-footer { margin-block-start: 86px; padding-block-end: 70px; }
+.print-link-label { display: none; }
+.not-found { margin-block: 85px; display: flex; flex-direction: column; gap: 24px; }
+.not-found h1 { font-size: 43px; line-height: 1.2; }
+.not-found p { color: var(--color-muted); line-height: 1.5; }
+
+@media (min-width: 850px) and (max-width: 1100px) {
+  .site-shell { inline-size: calc(100% - 80px); }
+  .about-contact, .project-narrative { gap: 48px; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); }
+  .resume-hero { flex-wrap: wrap; }
+  .resume-section { grid-template-columns: 170px minmax(0, 1fr); gap: 32px; }
+  .resume-entry-heading { grid-template-columns: minmax(0, 1fr) 145px; }
+}
+
+@media (max-width: 849px) {
+  .site-shell { inline-size: calc(100% - 48px); padding-block-start: 22px; }
+  .site-header { block-size: 44px; }
+  .wordmark { font-size: 22px; line-height: 1.35; }
+  .header-actions { gap: 16px; }
+  .desktop-navigation { display: none; }
+  .mobile-resume { display: flex; min-block-size: 44px; align-items: center; font-size: 13px; line-height: 1.35; font-weight: 500; color: var(--color-muted); }
+  .mobile-resume[aria-current] { color: var(--color-ink); }
+  .mobile-navigation { position: fixed; z-index: 10; bottom: max(10px, env(safe-area-inset-bottom)); left: 50%; transform: translateX(-50%); display: flex; justify-content: center; gap: 6px; inline-size: min(376px, calc(100% - 14px)); block-size: 78px; padding: 6px 13px 10px; border: 1px solid var(--color-border); border-radius: 20px; background: var(--color-mobile-nav); }
+  .mobile-navigation .navigation-link { display: flex; flex-direction: column; justify-content: center; align-items: center; flex: 0 1 80px; padding: 2px 0; gap: 2px; min-inline-size: 0; block-size: 62px; font-size: 11px; line-height: 14px; font-weight: 400; }
+  .mobile-navigation .navigation-link[aria-current] { font-weight: 600; }
+  .tab-indicator { display: grid; place-items: center; inline-size: 48px; block-size: 32px; border-radius: 16px; transition: background-color var(--motion-action) ease-out; }
+  .navigation-link[aria-current] .tab-indicator, .mobile-navigation .navigation-link:hover .tab-indicator { background: var(--color-nav-pill); }
+  .mobile-navigation .navigation-link[aria-current] img { filter: brightness(0); }
+  :root[data-theme='dark'] .mobile-navigation .navigation-link[aria-current] img { filter: brightness(0) invert(0.93); }
+  .home-page { margin-block-start: 58px; gap: 58px; }
+  .hero { gap: 14px; }
+  .hero h1 { font-size: 43px; line-height: 1.1; max-inline-size: 500px; }
+  .hero-role { font-size: 20px; line-height: 1.35; font-weight: 500; }
+  .hero-description { font-size: 16px; line-height: 1.48; max-inline-size: 600px; }
+  .featured-projects h2 { font-size: 26px; line-height: 1.35; margin-block-end: 21px; }
+  .project-grid { grid-template-columns: minmax(0, 1fr); gap: 21px; }
+  .project-card p { max-inline-size: 100%; }
+  .about-contact { display: flex; flex-direction: column; gap: 58px; min-block-size: auto; }
+  .about-contact h2 { font-size: 24px; line-height: 1.35; margin-block-end: 13px; }
+  .contact-link { flex: 1 1 68px; max-inline-size: 68px; }
+  .desktop-copy { display: none; }
+  .mobile-copy { display: inline; }
+  #about p { font-size: 16px; line-height: 1.5; }
+  #contact h2 { margin-block-end: 16px; }
+  .site-footer { margin-block-start: 58px; padding-block-end: calc(112px + env(safe-area-inset-bottom)); line-height: 1.35; }
+  .case-study { margin-block-start: 47px; gap: 47px; padding-block-end: calc(128px + env(safe-area-inset-bottom)); }
+  .project-introduction { gap: 16px; }
+  .project-heading { gap: 11px; padding-block-start: 8px; }
+  .project-heading h1 { font-size: 43px; line-height: 1.08; }
+  .project-subtitle { font-size: 20px; line-height: 1.35; }
+  .project-summary { font-size: 16px; line-height: 1.5; }
+  .project-actions { flex-direction: column; align-items: stretch; gap: 10px; padding-block-start: 8px; }
+  .project-media-hero { block-size: 244px; }
+  .technologies { flex-direction: column; align-items: stretch; gap: 9px; }
+  .technologies h2 { flex: none; }
+  .technologies ul, .technologies:has(li:nth-child(8)) ul { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 9px 0; justify-content: space-between; }
+  .technologies li { inline-size: 94px; max-inline-size: 100%; justify-self: center; }
+  .technologies li:nth-child(3n+1) { justify-self: start; }
+  .technologies li:nth-child(3n) { justify-self: end; }
+  .technologies:has(li:nth-child(8)) ul { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .technologies:has(li:nth-child(8)) li { inline-size: 80px; justify-self: center; }
+  .project-narrative { display: flex; flex-direction: column; gap: 47px; }
+  .project-work { gap: 16px; }
+  .project-work h2 { font-size: 25px; line-height: 1.24; }
+  .project-work p { font-size: 16px; line-height: 1.6; }
+  .project-scope { padding: 0; border-block-start: 1px solid var(--color-border); }
+  .project-scope > div { gap: 15px; padding-block-start: 15px; }
+  .project-scope > div + div { margin-block-start: 15px; padding-block-start: 15px; }
+  .project-scope dd, .project-scope > div:first-child dd { line-height: 1.45; }
+  .project-supporting { grid-template-columns: minmax(0, 1fr); gap: 25px; }
+  .project-supporting .project-media { block-size: 220px; }
+  .project-supporting figcaption { margin-block-start: 10px; font-size: 13px; }
+  .project-ending { padding-block-start: 25px; gap: 25px; }
+  .project-outcome h2 { font-size: 25px; line-height: 1.24; }
+  .project-outcome p { font-size: 16px; line-height: 1.55; }
+  .project-pagination { padding-block-start: 25px; font-size: 14px; line-height: 1.4; gap: 20px; }
+  .system-overview { aspect-ratio: 342 / 508; }
+  .diagram-canvas { inline-size: 342px; block-size: 508px; }
+  .diagram-title, .diagram-routes-desktop { display: none; }
+  .diagram-routes-mobile { display: block; }
+  :root[data-theme='dark'] .diagram-routes-mobile { filter: brightness(0) invert(0.8); }
+  .diagram-eyebrow { left: 16px; top: 15px; font-size: 11px; line-height: 1.35; }
+  .diagram-android, .diagram-supabase { left: 16px; inline-size: 310px; block-size: 91px; }
+  .diagram-android { top: 44px; }
+  .diagram-supabase { top: 178px; }
+  .diagram-node h3 { font-size: 16px; margin-block-start: 9px; }
+  .diagram-node p { font-size: 12px; margin-block-start: 5px; }
+  .diagram-viewer, .diagram-mcp { top: 317px; inline-size: 150px; block-size: 104px; }
+  .diagram-viewer { left: 16px; }
+  .diagram-mcp { left: 176px; }
+  .diagram-viewer h3, .diagram-mcp h3 { font-size: 16px; }
+  .diagram-viewer p, .diagram-mcp p { font-size: 12px; }
+  .diagram-note { left: 16px; top: 456px; inline-size: 310px; font-size: 12px; }
+  .resume-page { margin-block-start: 63px; }
+  .resume-hero { flex-direction: column; gap: 20px; }
+  .resume-identity { inline-size: 100%; gap: 11px; }
+  .resume-identity h1 { font-size: 39px; line-height: 47px; max-inline-size: 400px; }
+  .resume-role { font-size: 13.5px; line-height: 20px; }
+  .resume-contact { font-size: 12.3px; line-height: 20px; }
+  .resume-actions { gap: 10px; inline-size: 100%; }
+  .resume-actions button { inline-size: 132px; flex: 0 1 132px; }
+  .resume-actions a { inline-size: 194px; flex: 0 1 194px; }
+  .resume-top-rule { margin-block: 32px 42px; }
+  .resume-section { display: flex; flex-direction: column; gap: 19px; }
+  .resume-section > h2 { font-size: 19px; line-height: 27px; padding-block-end: 9px; inline-size: 100%; }
+  .resume-profile .resume-section-content { font-size: 14.5px; line-height: 23px; }
+  .resume-experience { margin-block-start: 45px; }
+  .resume-entry-heading { display: flex; flex-direction: column; gap: 6px; }
+  .resume-entry h3, .resume-education h3 { font-size: 17px; line-height: 23.5px; }
+  .resume-dates { font-size: 12px; line-height: 18px; text-align: left; }
+  .resume-entry-role { font-size: 12px; line-height: 19px; margin-block-start: 9px; }
+  .resume-entry-links { font-size: 12px; line-height: 18px; font-weight: 500; margin-block-start: 9px; gap: 17px; }
+  .resume-bullets { margin-block-start: 9px; gap: 8px; font-size: 13.5px; }
+  .resume-bullets li { line-height: 21px; }
+  .resume-entry + .resume-entry { margin-block-start: 22px; padding-block-start: 23px; }
+  .resume-education { margin-block-start: 48px; }
+  .resume-education .resume-section-content { font-size: 14px; line-height: 21px; gap: 10px; }
+  .resume-skills { margin-block-start: 47px; }
+  .resume-skills dl { gap: 18px; }
+  .resume-skills dl > div { display: flex; flex-direction: column; gap: 6px; }
+  .resume-skills dt { font-size: 13px; line-height: 20px; }
+  .resume-skills dd { font-size: 13.5px; line-height: 21px; }
+  .resume-return { margin-block-start: 57px; padding-block-start: 24px; }
+  .resume-page + .site-footer { margin-block-start: 62px; padding-block-end: calc(128px + env(safe-area-inset-bottom)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}

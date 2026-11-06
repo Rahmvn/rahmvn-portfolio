@@ -1,0 +1,872 @@
+[
+  {
+    "file": "src/assets/brands/css3.svg",
+    "bytes": 328,
+    "sha256": "f73d87c6b7d2a021f486b0d52a59893174ba5e3b7ceb3dcdfab865ea250ba767",
+    "intrinsic": {
+      "viewBox": "0 0 24 24"
+    },
+    "source": {
+      "kind": "Simple Icons",
+      "url": "https://github.com/simple-icons/simple-icons/blob/13.0.0/icons/css3.svg",
+      "license": "CC0-1.0; public/CC0-Simple-Icons.txt"
+    }
+  },
+  {
+    "file": "src/assets/brands/javascript.svg",
+    "bytes": 974,
+    "sha256": "c9be35a7a861ebe80ae4ee706d05004b99ee59fc63db69da6dcc10776718434b",
+    "intrinsic": {
+      "viewBox": "0 0 24 24"
+    },
+    "source": {
+      "kind": "Simple Icons",
+      "url": "https://github.com/simple-icons/simple-icons/blob/develop/icons/javascript.svg",
+      "license": "CC0-1.0; public/CC0-Simple-Icons.txt"
+    }
+  },
+  {
+    "file": "src/assets/brands/postgresql.svg",
+    "bytes": 5205,
+    "sha256": "c8ccadbd88c9312c2ad3734c4861b31d3485ce179ee91d64793143f83cfa745c",
+    "intrinsic": {
+      "viewBox": "0 0 24 24"
+    },
+    "source": {
+      "kind": "Simple Icons",
+      "url": "https://github.com/simple-icons/simple-icons/blob/develop/icons/postgresql.svg",
+      "license": "CC0-1.0; public/CC0-Simple-Icons.txt"
+    }
+  },
+  {
+    "file": "src/assets/brands/react.svg",
+    "bytes": 2926,
+    "sha256": "ab9136a1a4a8be72ac6743e1bdd1912d878bd68d57787ea7a6c6838e3b23c01c",
+    "intrinsic": {
+      "viewBox": "0 0 24 24"
+    },
+    "source": {
+      "kind": "Simple Icons",
+      "url": "https://github.com/simple-icons/simple-icons/blob/develop/icons/react.svg",
+      "license": "CC0-1.0; public/CC0-Simple-Icons.txt"
+    }
+  },
+  {
+    "file": "src/assets/brands/vite.svg",
+    "bytes": 447,
+    "sha256": "642bb261d6476ddf326b8ed7757543b3443a93a77fef1e434021fc201defa21c",
+    "intrinsic": {
+      "viewBox": "0 0 24 24"
+    },
+    "source": {
+      "kind": "Simple Icons",
+      "url": "https://github.com/simple-icons/simple-icons/blob/develop/icons/vite.svg",
+      "license": "CC0-1.0; public/CC0-Simple-Icons.txt"
+    }
+  },
+  {
+    "file": "src/assets/design/102-766-imgEmailVectorIcon.svg",
+    "bytes": 608,
+    "sha256": "2b4035bc75ea610f20910ebedaa0d26d6d35dd7879c3b0a4d5233c8b70ea8e10",
+    "intrinsic": {
+      "width": "24",
+      "height": "24",
+      "viewBox": "0 0 24 24"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "102:766",
+      "asset": "imgEmailVectorIcon"
+    }
+  },
+  {
+    "file": "src/assets/design/102-766-imgGitHubVectorIcon.svg",
+    "bytes": 892,
+    "sha256": "1fe217ea2bb09f6d59df1754be5e77d9c70d9fe2e2c6be66f76cdadea8f39d1e",
+    "intrinsic": {
+      "width": "24",
+      "height": "24",
+      "viewBox": "0 0 24 24"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "102:766",
+      "asset": "imgGitHubVectorIcon"
+    }
+  },
+  {
+    "file": "src/assets/design/102-766-imgWhatsAppVectorIcon.svg",
+    "bytes": 2164,
+    "sha256": "ec20fa96eac9558296e6fec8e29920d65757fc1743158de5c86080b4fc110273",
+    "intrinsic": {
+      "width": "24",
+      "height": "24",
+      "viewBox": "0 0 24 24"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "102:766",
+      "asset": "imgWhatsAppVectorIcon"
+    }
+  },
+  {
+    "file": "src/assets/design/102-766-imgXVectorIcon.svg",
+    "bytes": 487,
+    "sha256": "007315eec435ae9d27e27d81fa39b233129dcfc946808b43d2567733836faa64",
+    "intrinsic": {
+      "width": "24",
+      "height": "24",
+      "viewBox": "0 0 24 24"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "102:766",
+      "asset": "imgXVectorIcon"
+    }
+  },
+  {
+    "file": "src/assets/design/102-945-imgAboutIconVector.svg",
+    "bytes": 800,
+    "sha256": "5278a2fd2fa17b7189952beef7f91432cdc5f72eb1dd79e15d46c351223390ec",
+    "intrinsic": {
+      "width": "20",
+      "height": "20",
+      "viewBox": "0 0 20 20"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "102:945",
+      "asset": "imgAboutIconVector"
+    }
+  },
+  {
+    "file": "src/assets/design/102-945-imgContactIconVector.svg",
+    "bytes": 889,
+    "sha256": "421ace0bc26f796c7058f3da0a597d6bf8c705a94e251941a198e906bb6371b8",
+    "intrinsic": {
+      "width": "20",
+      "height": "20",
+      "viewBox": "0 0 20 20"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "102:945",
+      "asset": "imgContactIconVector"
+    }
+  },
+  {
+    "file": "src/assets/design/102-945-imgHomeIconVector.svg",
+    "bytes": 568,
+    "sha256": "4a66a7abb6f279ceaae55dc64a9e7c226057343245b414b1121eeb8b023bbe2c",
+    "intrinsic": {
+      "width": "20",
+      "height": "20",
+      "viewBox": "0 0 20 20"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "102:945",
+      "asset": "imgHomeIconVector"
+    }
+  },
+  {
+    "file": "src/assets/design/102-945-imgProjectsIconVector.svg",
+    "bytes": 1364,
+    "sha256": "864ebaa0d794c8a5d9e3dbb11cef16310a68751c0d623e4cc5285887bc2f57b6",
+    "intrinsic": {
+      "width": "20",
+      "height": "20",
+      "viewBox": "0 0 20 20"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "102:945",
+      "asset": "imgProjectsIconVector"
+    }
+  },
+  {
+    "file": "src/assets/design/110-198-imgDataAndAuthorizationRoutes.svg",
+    "bytes": 989,
+    "sha256": "b6dc8e95a71253231f9ff63fc526f6c6115deee76f184e70e6e8e5fad942ad97",
+    "intrinsic": {
+      "width": "1060",
+      "height": "470",
+      "viewBox": "0 0 1060 470"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "110:198",
+      "asset": "imgDataAndAuthorizationRoutes"
+    }
+  },
+  {
+    "file": "src/assets/design/15-2-imgEmailVectorIcon.svg",
+    "bytes": 562,
+    "sha256": "0b1c9ceba896a88c72c863aa9c62fcb3b5549283ac8ca20e6aa3c77a844464c8",
+    "intrinsic": {
+      "width": "24",
+      "height": "24",
+      "viewBox": "0 0 24 24"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "15:2",
+      "asset": "imgEmailVectorIcon"
+    }
+  },
+  {
+    "file": "src/assets/design/15-2-imgGitHubVectorIcon.svg",
+    "bytes": 846,
+    "sha256": "42c478b8f26da158974ff7df8c8083c307fe50acd64d294e48701b421c928cf6",
+    "intrinsic": {
+      "width": "24",
+      "height": "24",
+      "viewBox": "0 0 24 24"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "15:2",
+      "asset": "imgGitHubVectorIcon"
+    }
+  },
+  {
+    "file": "src/assets/design/15-2-imgWhatsAppVectorIcon.svg",
+    "bytes": 2118,
+    "sha256": "6266477efe9ecba58bfb2bf37f1372a1651459ff201b6c32ed787744db7ed277",
+    "intrinsic": {
+      "width": "24",
+      "height": "24",
+      "viewBox": "0 0 24 24"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "15:2",
+      "asset": "imgWhatsAppVectorIcon"
+    }
+  },
+  {
+    "file": "src/assets/design/15-2-imgXVectorIcon.svg",
+    "bytes": 441,
+    "sha256": "cfb5103a23091cc5a034c6d30592fc6ecf28516bdd36df414ffa7c9d32b19350",
+    "intrinsic": {
+      "width": "24",
+      "height": "24",
+      "viewBox": "0 0 24 24"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "15:2",
+      "asset": "imgXVectorIcon"
+    }
+  },
+  {
+    "file": "src/assets/design/21-46-imgThemeDark.svg",
+    "bytes": 1568,
+    "sha256": "19bfb7fe342c6e2b9e52370bc4573e333877ec78a67d4d57c9656ee548d27d67",
+    "intrinsic": {
+      "width": "70",
+      "height": "38",
+      "viewBox": "0 0 70 38"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "21:46",
+      "asset": "imgThemeDark"
+    }
+  },
+  {
+    "file": "src/assets/design/21-46-imgThemeLight.svg",
+    "bytes": 1569,
+    "sha256": "aa7cf96749d981d4dd4862d2529bc8d6b4af2cf256984c305894ac93c4ad52f9",
+    "intrinsic": {
+      "width": "70",
+      "height": "38",
+      "viewBox": "0 0 70 38"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "21:46",
+      "asset": "imgThemeLight"
+    }
+  },
+  {
+    "file": "src/assets/design/31-101-imgAboutIconVector.svg",
+    "bytes": 800,
+    "sha256": "7166df437d18cd49932ef1853f18866b0f894985d07b56e607479019886a733a",
+    "intrinsic": {
+      "width": "20",
+      "height": "20",
+      "viewBox": "0 0 20 20"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "31:101",
+      "asset": "imgAboutIconVector"
+    }
+  },
+  {
+    "file": "src/assets/design/31-101-imgContactIconVector.svg",
+    "bytes": 889,
+    "sha256": "7720cb29e7bb1917a423eb3e5c2e69a9b6a274081946f998444556ba582352c6",
+    "intrinsic": {
+      "width": "20",
+      "height": "20",
+      "viewBox": "0 0 20 20"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "31:101",
+      "asset": "imgContactIconVector"
+    }
+  },
+  {
+    "file": "src/assets/design/31-101-imgHomeIconVector.svg",
+    "bytes": 568,
+    "sha256": "1a14fed1b8666219a5441f83b942baec368e3d9e9e19f9736a4ec726026bca5e",
+    "intrinsic": {
+      "width": "20",
+      "height": "20",
+      "viewBox": "0 0 20 20"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "31:101",
+      "asset": "imgHomeIconVector"
+    }
+  },
+  {
+    "file": "src/assets/design/31-101-imgProjectsIconVector.svg",
+    "bytes": 1364,
+    "sha256": "7b5e26e4d8bc5b9844bc7e9cabdd9b43723a86aed9d1fa328714a1cea64d3aa8",
+    "intrinsic": {
+      "width": "20",
+      "height": "20",
+      "viewBox": "0 0 20 20"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "31:101",
+      "asset": "imgProjectsIconVector"
+    }
+  },
+  {
+    "file": "src/assets/design/42-3-imgAuthenticBrandVectorSupabase.svg",
+    "bytes": 680,
+    "sha256": "ff6b4dc0fde91b3a3aba3b5c3683ee3bb4b5c92d3130d4b98d10db3b7f87c8ac",
+    "intrinsic": {
+      "width": "28",
+      "height": "28",
+      "viewBox": "0 0 28 28"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "42:3",
+      "asset": "imgAuthenticBrandVectorSupabase"
+    }
+  },
+  {
+    "file": "src/assets/design/42-3-imgImageIconEditableVector.svg",
+    "bytes": 961,
+    "sha256": "e91ab7ffa6ae2afd74904e63cdcdca4c9722ee30df6e5d44c3cc890820763cb5",
+    "intrinsic": {
+      "width": "28",
+      "height": "28",
+      "viewBox": "0 0 28 28"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "42:3",
+      "asset": "imgImageIconEditableVector"
+    }
+  },
+  {
+    "file": "src/assets/design/42-3-imgPaystackEditableVectorMark.svg",
+    "bytes": 359,
+    "sha256": "674c472bc52c58c77bd4391cec456438527979ac98dbc7cfd1ffbf00b769e849",
+    "intrinsic": {
+      "width": "26",
+      "height": "26",
+      "viewBox": "0 0 26 26"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "42:3",
+      "asset": "imgPaystackEditableVectorMark"
+    }
+  },
+  {
+    "file": "src/assets/design/56-2-imgAuthenticBrandVectorCompose.svg",
+    "bytes": 3166,
+    "sha256": "50cd2b240774bafd1b0221788e9fd1ff68050f5eb9bc3e7691f0438bc3c6a7ac",
+    "intrinsic": {
+      "width": "28",
+      "height": "28",
+      "viewBox": "0 0 28 28"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "56:2",
+      "asset": "imgAuthenticBrandVectorCompose"
+    }
+  },
+  {
+    "file": "src/assets/design/56-2-imgAuthenticBrandVectorKotlin.svg",
+    "bytes": 417,
+    "sha256": "db31130b6115eba57369623d4d15551cb9d3ca2aa97e6d46d8ad7550a21149a6",
+    "intrinsic": {
+      "width": "28",
+      "height": "28",
+      "viewBox": "0 0 28 28"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "56:2",
+      "asset": "imgAuthenticBrandVectorKotlin"
+    }
+  },
+  {
+    "file": "src/assets/design/56-2-imgAuthenticBrandVectorMcp.svg",
+    "bytes": 4205,
+    "sha256": "ee263066332121f6ac263848693aa50f9362fa2552f6012b61286299fb88ac80",
+    "intrinsic": {
+      "width": "28",
+      "height": "28",
+      "viewBox": "0 0 28 28"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "56:2",
+      "asset": "imgAuthenticBrandVectorMcp"
+    }
+  },
+  {
+    "file": "src/assets/design/56-2-imgAuthenticBrandVectorTypeScript.svg",
+    "bytes": 2450,
+    "sha256": "b1027845397565f3e9da70e4045d03d9f3539ba19ad52694a56fe6758afd2de5",
+    "intrinsic": {
+      "width": "28",
+      "height": "28",
+      "viewBox": "0 0 28 28"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "56:2",
+      "asset": "imgAuthenticBrandVectorTypeScript"
+    }
+  },
+  {
+    "file": "src/assets/design/56-2-imgAwsEditableMonochromeIcon.svg",
+    "bytes": 1067,
+    "sha256": "38550bc8cd75fdfcced1b1f49e015f5c9443ea66e4989d8ea9715baf46e0ba49",
+    "intrinsic": {
+      "width": "26",
+      "height": "26",
+      "viewBox": "0 0 26 26"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "56:2",
+      "asset": "imgAwsEditableMonochromeIcon"
+    }
+  },
+  {
+    "file": "src/assets/design/56-2-imgDataAndAuthorizationRoutes.svg",
+    "bytes": 989,
+    "sha256": "b6dc8e95a71253231f9ff63fc526f6c6115deee76f184e70e6e8e5fad942ad97",
+    "intrinsic": {
+      "width": "1060",
+      "height": "470",
+      "viewBox": "0 0 1060 470"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "56:2",
+      "asset": "imgDataAndAuthorizationRoutes"
+    }
+  },
+  {
+    "file": "src/assets/design/56-2-imgRoomDatabaseIconEditableVector.svg",
+    "bytes": 933,
+    "sha256": "e30c39db98b8287cb8cbd4ca9417988cae29a1b86294a5b45c930662f8c2b746",
+    "intrinsic": {
+      "width": "26",
+      "height": "26",
+      "viewBox": "0 0 26 26"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "56:2",
+      "asset": "imgRoomDatabaseIconEditableVector"
+    }
+  },
+  {
+    "file": "src/assets/design/56-61-imgArchitectureConnectorsMobile.svg",
+    "bytes": 676,
+    "sha256": "e27fa3d3516222a860e1e487c865706d0d91b81709dd407b3305aa320e7ff3f3",
+    "intrinsic": {
+      "width": "342",
+      "height": "508",
+      "viewBox": "0 0 342 508"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "56:61",
+      "asset": "imgArchitectureConnectorsMobile"
+    }
+  },
+  {
+    "file": "src/assets/design/69-180-imgFormspreeEditableMonochromeVector.svg",
+    "bytes": 1137,
+    "sha256": "89cd643cfb48ebd00e9fe776ba0e0d51dafcb7dbdb7c5b6cb5be437d862b16c2",
+    "intrinsic": {
+      "width": "26",
+      "height": "26",
+      "viewBox": "0 0 26 26"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "69:180",
+      "asset": "imgFormspreeEditableMonochromeVector"
+    }
+  },
+  {
+    "file": "src/assets/design/69-180-imgHtml5EditableMonochromeVector.svg",
+    "bytes": 588,
+    "sha256": "c7cda022eacb6fd4c9922399b3c0c55358787ea9b58bd69d394a7bccb25479e5",
+    "intrinsic": {
+      "width": "26",
+      "height": "26",
+      "viewBox": "0 0 26 26"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "69:180",
+      "asset": "imgHtml5EditableMonochromeVector"
+    }
+  },
+  {
+    "file": "src/assets/design/69-180-imgNetlifyEditableMonochromeVector.svg",
+    "bytes": 773,
+    "sha256": "3936240b15f47bbbff07272705874d8e0538af5b35498b9b32cbeda7adcd8948",
+    "intrinsic": {
+      "width": "26",
+      "height": "26",
+      "viewBox": "0 0 26 26"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "69:180",
+      "asset": "imgNetlifyEditableMonochromeVector"
+    }
+  },
+  {
+    "file": "src/assets/design/71-235-imgFigmaEditableMonochromeVector.svg",
+    "bytes": 2092,
+    "sha256": "db7aa8405773c9658a93196bc6fe2daa76fcdd16cfc90ce26bde36f16821e46f",
+    "intrinsic": {
+      "width": "26",
+      "height": "26",
+      "viewBox": "0 0 26 26"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "71:235",
+      "asset": "imgFigmaEditableMonochromeVector"
+    }
+  },
+  {
+    "file": "src/assets/design/71-235-imgVercelEditableMonochromeVector.svg",
+    "bytes": 308,
+    "sha256": "bcaf39b7439e737cc94e25141f444b6e3797bbbad5a54cb9d96ca59b71c5d038",
+    "intrinsic": {
+      "width": "26",
+      "height": "26",
+      "viewBox": "0 0 26 26"
+    },
+    "source": {
+      "kind": "Figma export",
+      "fileKey": "GBBM8b1souv2RrwAD3x4EQ",
+      "frame": "71:235",
+      "asset": "imgVercelEditableMonochromeVector"
+    }
+  },
+  {
+    "file": "src/assets/projects/al-muflihoon-1440.webp",
+    "bytes": 85624,
+    "sha256": "ae6b0f2193f0f100b986dbd6746f586ab1f551020b24ea5c2e88cda04e04a5e6",
+    "intrinsic": {
+      "width": 1440,
+      "height": 960
+    },
+    "source": {
+      "url": "https://almuflihoon.com.ng/",
+      "title": "Al-Muflihoon International School | Tahfeez, Arabic and Boarding School in Lugbe, Abuja",
+      "capturedAt": "2026-11-05T19:13:48.517Z",
+      "width": 1440,
+      "status": 200,
+      "originalSha256": "3aff3af11a78835d5a90889d806927a78d39fd2bd57f1596dc318de685ee2e6d",
+      "processing": "Original public viewport capture converted to WebP quality88; no content edits."
+    }
+  },
+  {
+    "file": "src/assets/projects/al-muflihoon-admissions-390.webp",
+    "bytes": 31036,
+    "sha256": "5b46716a3921116798a675659416988782ae46fe9a50892b4d50d2eaa0ac669a",
+    "intrinsic": {
+      "width": 390,
+      "height": 844
+    },
+    "source": {
+      "url": "https://almuflihoon.com.ng/admissions",
+      "title": "Admissions | Enrolment, Placement and Boarding in Lugbe, Abuja",
+      "capturedAt": "2026-11-05T19:20:23.271Z",
+      "width": 390,
+      "status": 200,
+      "originalSha256": "9d76ae10d16776f78f10747fa3986de66228898ea7a663403b06e8ed24fbd03f",
+      "processing": "Original public viewport capture converted to WebP quality88; no content edits."
+    }
+  },
+  {
+    "file": "src/assets/projects/pillars-of-pension-1440.webp",
+    "bytes": 114970,
+    "sha256": "64039ecc442726021a4b556b95c660581c384064805504f8180f973d858a3bb7",
+    "intrinsic": {
+      "width": 1440,
+      "height": 960
+    },
+    "source": {
+      "url": "https://pillars-of-pension-website.vercel.app/",
+      "title": "Pillars of the Pension System in Nigeria",
+      "capturedAt": "2026-11-05T19:13:55.176Z",
+      "width": 1440,
+      "status": 200,
+      "originalSha256": "8f2c8a4bc123a40fd929a9a5d2c22af36103c0617845eb2a54aeeddc2890bc15",
+      "processing": "Original public viewport capture converted to WebP quality88; no content edits."
+    }
+  },
+  {
+    "file": "src/assets/projects/pillars-of-pension-author-390.webp",
+    "bytes": 36210,
+    "sha256": "2dd524aa6e863b9a80366ee8d2dec3fbaaa999a3104766d2713b493b44e2d395",
+    "intrinsic": {
+      "width": 390,
+      "height": 844
+    },
+    "source": {
+      "url": "https://pillars-of-pension-website.vercel.app/author.html",
+      "title": "The Author \u2014 Saheed Adekunle Imran",
+      "capturedAt": "2026-11-05T19:20:46.378Z",
+      "width": 390,
+      "status": 200,
+      "originalSha256": "35217d7d8dc0308e3ec26d7517f5476c687ce1ddab5a755a9252035ceba9ede5",
+      "processing": "Original public viewport capture converted to WebP quality88; no content edits."
+    }
+  },
+  {
+    "file": "src/assets/projects/promotionsure-practice-desktop.webp",
+    "bytes": 47266,
+    "sha256": "95148e32635d1923c1f9dfbfda10dcb7778505c66359ea94ac76d06c0d658489",
+    "intrinsic": {
+      "width": 1895,
+      "height": 947
+    },
+    "source": {
+      "kind": "Owner-authorized authenticated Practice page capture",
+      "url": "https://promotionsure.com.ng/",
+      "browser": "Existing owner-controlled Chrome session",
+      "state": "Unanswered first practice question; no answers selected or submitted by this capture workflow.",
+      "view": "Desktop",
+      "physicalCapturePixels": [
+        1920,
+        948
+      ],
+      "windowDpi": 144,
+      "processing": "Native screenshot crop with browser scrollbars/window edges excluded; lossless WebP preserves the exact source RGB pixels. No product UI or text retouching.",
+      "archiveAsset": "practice-desktop.png",
+      "originalSha256": "eaf50d06d33f3de7b816922b578a7853924385a2be73c3019b1a4bf22d7478b1",
+      "capturedAt": "2026-11-06T08:19:40.9218513Z",
+      "originalDimensions": [
+        1920,
+        948
+      ],
+      "crop": [
+        1,
+        1,
+        1896,
+        948
+      ]
+    }
+  },
+  {
+    "file": "src/assets/projects/promotionsure-practice-narrow.webp",
+    "bytes": 27556,
+    "sha256": "33684b0658299dfa3356635076b2e04724f840644d83b7d305e3586e5ee7f728",
+    "intrinsic": {
+      "width": 748,
+      "height": 877
+    },
+    "source": {
+      "kind": "Owner-authorized authenticated Practice page capture",
+      "url": "https://promotionsure.com.ng/",
+      "browser": "Existing owner-controlled Chrome session",
+      "state": "Unanswered first practice question; no answers selected or submitted by this capture workflow.",
+      "view": "Narrow responsive layout",
+      "physicalCapturePixels": [
+        750,
+        878
+      ],
+      "windowDpi": 144,
+      "processing": "Native screenshot crop with browser scrollbars/window edges excluded; lossless WebP preserves the exact source RGB pixels. No product UI or text retouching.",
+      "archiveAsset": "practice-mobile.png",
+      "originalSha256": "46a8685d5154f6af05298354a0f90c7a793bc6c5f47c65f9d952c6eb693df07f",
+      "capturedAt": "2026-11-06T08:21:07.2524325Z",
+      "originalDimensions": [
+        750,
+        878
+      ],
+      "crop": [
+        1,
+        1,
+        749,
+        878
+      ]
+    }
+  },
+  {
+    "file": "src/assets/projects/alabarin-trusted-viewer.webp",
+    "bytes": 20818,
+    "sha256": "a4330983940bb3b53260de19f71231c34799934702015988e8de3a947c8262b0",
+    "intrinsic": {
+      "width": 1214,
+      "height": 554
+    },
+    "source": {
+      "kind": "Direct native screenshot",
+      "archiveAsset": "viewer-original.png",
+      "originalDimensions": [
+        1920,
+        948
+      ],
+      "crop": [
+        620,
+        271,
+        1834,
+        825
+      ],
+      "originalSha256": "4b865cfefa16bc27705a8a02b1ba3f1b290db02da817d799a0e0e2bc92e93950",
+      "inspectedAt": "2026-11-06",
+      "description": "Original authenticated browser screenshot; Journey status and historical update time, with no precise coordinates.",
+      "processing": "Direct original PNG crop encoded as lossless WebP; decoded RGB pixels exactly equal the source crop. No upscaling, sharpening, text edits, video frames or poster composition.",
+      "evidenceClass": "Historical application/device/browser screenshot, not fresh hosted acceptance."
+    }
+  },
+  {
+    "file": "src/assets/projects/alabarin-android-start.webp",
+    "bytes": 6696,
+    "sha256": "e03079386514fa88f916eec1c919b14bade71b31ecb3d16e7868401dd649da2c",
+    "intrinsic": {
+      "width": 672,
+      "height": 480
+    },
+    "source": {
+      "kind": "Direct native screenshot",
+      "archiveAsset": "live-start-final.png",
+      "originalDimensions": [
+        720,
+        1640
+      ],
+      "crop": [
+        24,
+        80,
+        696,
+        560
+      ],
+      "originalSha256": "dfceee6df26fd3ac2faa7e5015ba25d029b7ab5cc5716135702271bbcc9f1646",
+      "inspectedAt": "2026-11-06",
+      "description": "Direct Android Traveller Start Journey screen; native destination and expected-arrival controls.",
+      "processing": "Direct original PNG crop encoded as lossless WebP; decoded RGB pixels exactly equal the source crop. No upscaling, sharpening, text edits, video frames or poster composition.",
+      "evidenceClass": "Historical application/device/browser screenshot, not fresh hosted acceptance."
+    }
+  },
+  {
+    "file": "src/assets/projects/alabarin-cover.webp",
+    "bytes": 152200,
+    "sha256": "8b2860903f48e53e913acd9b79fe3877ba51e0417da26f6e8db7c0a077371559",
+    "intrinsic": {
+      "width": 1920,
+      "height": 1080
+    },
+    "source": {
+      "kind": "Existing video cover, homepage-only owner exception",
+      "archiveAsset": "Alabarin-YouTube-Thumbnail.png",
+      "originalSha256": "a65f9429b971cf590d6bd6887c5d732170533289ad94e4e8eddedf65f2ac00ad",
+      "inspectedAt": "2026-11-06",
+      "processing": "Lossless WebP conversion of the existing cover; no new composition or content edits.",
+      "evidenceClass": "Editorial video thumbnail used only on the homepage at the owner request."
+    }
+  },
+  {
+    "file": "src/assets/projects/promotionsure-home.webp",
+    "bytes": 42724,
+    "sha256": "b7fed09c15176cb8101f510a8f6ed6235a27bba178d24c4bf59124a354e5953d",
+    "intrinsic": {
+      "width": 1220,
+      "height": 660
+    },
+    "source": {
+      "kind": "Public landing-page screenshot",
+      "url": "https://promotionsure.com.ng/",
+      "status": 200,
+      "capturedAt": "2026-11-06T09:43:34.862Z",
+      "archiveAsset": "landing-desktop.png",
+      "originalDimensions": [
+        1440,
+        900
+      ],
+      "crop": [
+        110,
+        0,
+        1330,
+        660
+      ],
+      "originalSha256": "829d17a4aa2a59919e8d41c388bd9271bd608c1e224b784c95ca6b762761dddb",
+      "processing": "Native screenshot crop with browser scrollbars/window edges excluded; lossless WebP preserves the exact source RGB pixels. No product UI or text retouching.",
+      "purpose": "Homepage card only; case-study Practice images are separate.",
+      "preparation": "Browser scrollbars hidden only in this disposable capture context; page content unchanged."
+    }
+  }
+]

@@ -1,0 +1,76 @@
+/* Figma 101:2; Portfolio / Colors and Portfolio / Spacing. See docs/FIGMA_REFERENCE.md. */
+:root {
+  color-scheme: light;
+  --color-background: #f8f8f6;
+  --color-ink: #202524;
+  --color-muted: #656d69;
+  --color-accent: #46565e;
+  --color-surface: #eef1ef;
+  --color-border: #e0e5df;
+  /* Figma calls this "white"; it represents a raised surface in both modes. */
+  --color-raised: #fff;
+  --color-media: #ecefed;
+  --color-card-hover: #e5ebe6;
+  --color-primary-hover: #38413c;
+  --color-nav-pill: #ecefed;
+  --color-mobile-nav: #fefffe;
+  --color-diagram: #edf0ed;
+  --color-diagram-node: #fafbf9;
+  --color-diagram-border: #d8deda;
+  --font-sans: 'Geist Variable', 'Geist', system-ui, sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --text-label: 0.875rem;
+  --text-body: 1rem;
+  --text-body-large: 1.125rem;
+  --text-heading-small: 1.75rem;
+  --text-heading: 2rem;
+  --text-display: 4rem;
+  --leading-body: 1.5;
+  --space-8: 0.5rem;
+  --space-12: 0.75rem;
+  --space-16: 1rem;
+  --space-24: 1.5rem;
+  --space-32: 2rem;
+  --radius-small: 0.5rem;
+  --radius-panel: 1rem;
+  --radius-pill: 999px;
+  /* Layout measurements from homepage frames; breakpoint remains an implementation choice. */
+  --page-gutter: 1.5rem;
+  --content-max: 66.25rem;
+  --motion-entrance: 320ms;
+  --motion-hover: 180ms;
+  --motion-action: 160ms;
+  --motion-theme: 220ms;
+  --ease-entrance: ease-out;
+  --ease-theme: ease-in-out;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --color-background: #141917;
+  --color-ink: #edf0ed;
+  --color-muted: #b7c1bc;
+  --color-accent: #c6cfd3;
+  --color-surface: #28312c;
+  --color-border: #3e4842;
+  --color-raised: #202724;
+  --color-media: #28312c;
+  --color-card-hover: #313d36;
+  --color-primary-hover: #d7ded9;
+  --color-nav-pill: #28312c;
+  --color-mobile-nav: #202724;
+  --color-diagram: #28312c;
+  --color-diagram-node: #202724;
+  --color-diagram-border: #3e4842;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-entrance: 0ms;
+    --motion-hover: 0ms;
+    --motion-action: 0ms;
+    --motion-theme: 0ms;
+  }
+}
